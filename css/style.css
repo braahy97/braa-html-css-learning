@@ -328,11 +328,24 @@ a {
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: 1px;
-
+    display: block;
 }
 
 .plan .list__item {
     margin-bottom: 2rem;
+}
+
+.plan--popular .card__header {
+    position: relative;
+}
+
+.plan--popular .card__header::before {
+    content: url(/css/Images/popular.svg);
+    display: inline-block;
+    width: 40px;
+    position: absolute;
+    top: -6px;
+    right: 5%;
 }
 
 @media screen and (min-width:1024px) {
@@ -352,4 +365,18 @@ a {
         font-size: 1.7rem;
         display: block;
     }
+}
+
+/* media */
+
+.media {
+    display: flex;
+}
+
+.media__title {
+    margin: 0;
+}
+
+.media__image {
+    margin: 1rem 2rem;
 }
