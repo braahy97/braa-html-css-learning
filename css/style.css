@@ -516,7 +516,7 @@ a {
 }
 
 
-.icon-container {
+.testimonial .icon-container {
     position: absolute;
     right: -32px;
     top: 3rem;
@@ -576,7 +576,7 @@ a {
         text-align: left;
     }
 
-    .grid--cols-2 {
+    .callout .grid--cols-2 {
         grid-template-columns: 1fr auto;
     }
 }
@@ -786,4 +786,29 @@ a {
 
 .block-plans .card {
     max-width: 500px;
+}
+
+/* features */
+
+.feature__heading {
+    margin: 1rem 0;
+}
+
+.feature {
+    gap: 4rem 2rem;
+    margin: 12rem 0;
+}
+
+.feature:first-of-type {
+    margin-top: 6rem;
+}
+
+.feature__image {
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    .feature:nth-of-type(even) .feature__content {
+        order: 2;
+    }
 }
