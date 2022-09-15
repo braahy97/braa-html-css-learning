@@ -14,70 +14,44 @@
 </head>
 
 <body>
-    <section class=" block block--dark block--skewed-right block-showcase">
-        <div class="showcase--content">
-            <header class="block__header">
-                <h2>User-friendly Control Panel</h2>
-            </header>
-            <div class="container grid grid--cols-2">
-                <picture class="block-showcase__image">
-                    <source type="image/webp" srcset="/css/images/ipad.webp 1x, /css/images/ipad@2x.webp 2x">
-                    <source type="image/png" srcset="/css/images/ipad.png 1x, /css/images/ipad@2x.png 2x">
-                    <img src="/css/Images/ipad.png" alt="">
-                </picture>
-                <ul class="list">
-                    <li>
+    <section class="block block-testimonial">
+        <header class="block__header">
+            <h2 class="block__heading">What our Customers are Saying</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, facilis!</p>
+        </header>
+        <div class="card container testimonial">
+            <div class="grid grid--cols-2">
+                <div class="testimonial__image">
+                    <img src="./css/Images/testimonial.jpg" alt="">
+                    <span class="icon-container icon-container--accent">
+                        <svg class="icon--small icon--white">
+                            <use xlink:href="/css/images/sprite.svg#quotes"></use>
+                        </svg>
+                </div>
+                </span>
+                <blockquote class="quote">
+                    <p class="quote__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A vel sit
+                        perspiciatis
+                        voluptatibus maxime repellat
+                        totam inventore, debitis culpa magni!</p>
+                    <footer>
                         <div class="media">
                             <div class="media__image">
-                                <svg class="icon icon--white">
-                                    <use xlink:href="/css/images/sprite.svg#snap"></use>
+                                <svg class="icon icon--primary quote__line">
+                                    <use xlink:href="/css/images/sprite.svg#line"></use>
                                 </svg>
                             </div>
                             <div class="media__body">
-                                <h3 class="media__title">Easy Start & Managed Updates</h3>
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, amet. Cumque,
-                                    similique sapiente
-                                    sequi corrupti modi dolore illum magnam veniam.</p>
+                                <h3 class="media__title quote__author">John Smith</h3>
+                                <p class="quote__company">
+                                    ABC company
+                                </p>
                             </div>
-
                         </div>
-                    </li>
-                    <li>
-                        <div class="media">
-                            <div class="media__image">
-                                <svg class="icon icon--white">
-                                    <use xlink:href="/css/images/sprite.svg#growth"></use>
-                                </svg>
-                            </div>
-                            <div class="media__body">
-                                <h3 class="media__title">Staging, GIT & WP-CLI</h3>
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, amet. Cumque,
-                                    similique sapiente
-                                    sequi corrupti modi dolore illum magnam veniam.</p>
-                            </div>
-
-                        </div>
-                    </li>
-                    <li>
-                        <div class="media">
-                            <div class="media__image">
-                                <svg class="icon icon--white">
-                                    <use xlink:href="/css/images/sprite.svg#wordpress"></use>
-                                </svg>
-                            </div>
-                            <div class="media__body">
-                                <h3 class="media__title">Dynamic Caching & More</h3>
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, amet. Cumque,
-                                    similique sapiente
-                                    sequi corrupti modi dolore illum magnam veniam.</p>
-                            </div>
-
-                        </div>
-                    </li>
-                </ul>
+                    </footer>
+                </blockquote>
             </div>
         </div>
-
     </section>
     <script src="/js/main.js"></script>
 </body>
